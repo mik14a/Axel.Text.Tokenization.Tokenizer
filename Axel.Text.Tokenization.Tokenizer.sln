@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Axel.Text.Tokenization.Tokenizer", "Axel.Text.Tokenization.Tokenizer\Axel.Text.Tokenization.Tokenizer.shproj", "{CEDCF261-C2A4-41E7-806B-6E74F8087063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axel.Text.Tokenization.Tokenizer.Net", "Axel.Text.Tokenization.Tokenizer.Net\Axel.Text.Tokenization.Tokenizer.Net.csproj", "{62E66D6F-3A33-40C6-8A79-FC418E23CE43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axel.Text.Tokenization.Tokenizer.Test", "Axel.Text.Tokenization.Tokenizer.Test\Axel.Text.Tokenization.Tokenizer.Test.csproj", "{6641D622-605C-4925-BDCF-D2534C5FC6D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axel.TestTools.UnitTesting.TestRunner.Net", "Axel.TestTools.UnitTesting.TestRunner\Axel.TestTools.UnitTesting.TestRunner.Net\Axel.TestTools.UnitTesting.TestRunner.Net.csproj", "{8B56F179-5F5F-40A0-8903-FEF06B16C4AA}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Axel.Text.Tokenization.Tokenizer\Axel.Text.Tokenization.Tokenizer.projitems*{62e66d6f-3a33-40c6-8a79-fc418e23ce43}*SharedItemsImports = 4
+		Axel.TestTools.UnitTesting.TestRunner\Axel.TestTools.UnitTesting.TestRunner\Axel.TestTools.UnitTesting.TestRunner.projitems*{8b56f179-5f5f-40a0-8903-fef06b16c4aa}*SharedItemsImports = 4
+		Axel.Text.Tokenization.Tokenizer\Axel.Text.Tokenization.Tokenizer.projitems*{cedcf261-c2a4-41e7-806b-6e74f8087063}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62E66D6F-3A33-40C6-8A79-FC418E23CE43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E66D6F-3A33-40C6-8A79-FC418E23CE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E66D6F-3A33-40C6-8A79-FC418E23CE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E66D6F-3A33-40C6-8A79-FC418E23CE43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6641D622-605C-4925-BDCF-D2534C5FC6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6641D622-605C-4925-BDCF-D2534C5FC6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6641D622-605C-4925-BDCF-D2534C5FC6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6641D622-605C-4925-BDCF-D2534C5FC6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B56F179-5F5F-40A0-8903-FEF06B16C4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B56F179-5F5F-40A0-8903-FEF06B16C4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B56F179-5F5F-40A0-8903-FEF06B16C4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B56F179-5F5F-40A0-8903-FEF06B16C4AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
