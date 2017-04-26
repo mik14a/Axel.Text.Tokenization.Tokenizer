@@ -5,15 +5,13 @@
  * as published by Sam Hocevar. See the COPYING file for more details.
  */
 
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.Text.Tokenization;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Axel.Text.Tokenization.TokenizerTest
+namespace System.Text.Tokenization
 {
     [TestClass]
     public class TokenizerTests

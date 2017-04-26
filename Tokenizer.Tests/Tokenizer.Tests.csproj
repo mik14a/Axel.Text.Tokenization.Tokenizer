@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6641D622-605C-4925-BDCF-D2534C5FC6D5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Axel.Text.Tokenization.TokenizerTest</RootNamespace>
-    <AssemblyName>Axel.Text.Tokenization.TokenizerTest</AssemblyName>
+    <RootNamespace>Tokenizer.Tests</RootNamespace>
+    <AssemblyName>Tokenizer.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -59,7 +59,6 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TokenizerTests.cs" />
   </ItemGroup>
@@ -67,13 +66,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Axel.TestTools.UnitTesting.TestRunner\Axel.TestTools.UnitTesting.TestRunner.Net\Axel.TestTools.UnitTesting.TestRunner.Net.csproj">
-      <Project>{8b56f179-5f5f-40a0-8903-fef06b16c4aa}</Project>
-      <Name>Axel.TestTools.UnitTesting.TestRunner.Net</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Axel.Text.Tokenization.Tokenizer.Net\Axel.Text.Tokenization.Tokenizer.Net.csproj">
+    <ProjectReference Include="..\Tokenizer\Tokenizer.Net.csproj">
       <Project>{62E66D6F-3A33-40C6-8A79-FC418E23CE43}</Project>
-      <Name>Axel.Text.Tokenization.Tokenizer.Net</Name>
+      <Name>Tokenizer.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
@@ -104,7 +99,7 @@
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.1.11\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.1.11\build\net45\MSTest.TestAdapter.targets'))" />
   </Target>
   <Import Project="..\packages\MSTest.TestAdapter.1.1.11\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.1.11\build\net45\MSTest.TestAdapter.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

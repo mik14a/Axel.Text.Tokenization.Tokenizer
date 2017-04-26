@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>System.Text.Tokenization</RootNamespace>
-    <AssemblyName>Axel.Text.Tokenization.Tokenizer.Net</AssemblyName>
+    <AssemblyName>Tokenizer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="TokenDefinition.cs" />
+    <Compile Include="Tokenizer.cs" />
+    <Compile Include="TokenizerFactory.cs" />
   </ItemGroup>
-  <Import Project="..\Axel.Text.Tokenization.Tokenizer\Axel.Text.Tokenization.Tokenizer.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

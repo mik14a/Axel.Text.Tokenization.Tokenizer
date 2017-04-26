@@ -1,5 +1,5 @@
-﻿Axel.Text.Tokenization.Tokenizer
-================================
+﻿Tokenizer
+=========
 
 Simple tokenizer.
 
