@@ -56,8 +56,11 @@ namespace System.Text.Tokenization
         /// <param name="pattern">Pattern to match.</param>
         /// <param name="regexOptions">A bitwise options the regular expression.</param>
         public TokenDefinition(TokenType type, string pattern, RegexOptions regexOptions) {
+            if (type == null) throw new ArgumentNullException(nameof(type), $"{nameof(type)} is null.");
+            if (pattern == null) throw new ArgumentNullException(nameof(pattern), $"{nameof(pattern)} is null.");
+
             Type = type;
-            Pattern = pattern ?? throw new ArgumentNullException(nameof(pattern), $"{nameof(pattern)} is null.");
+            Pattern = pattern;
             regex = new Regex(pattern, RegexOptions.Compiled | regexOptions);
         }
 

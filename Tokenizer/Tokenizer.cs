@@ -43,8 +43,13 @@ namespace System.Text.Tokenization
         /// <param name="definitions">Token definition for tokenize.</param>
         /// <param name="text">Tokenize source input.</param>
         public Tokenizer(TokenDefinition<TokenType>[] definitions, string text) {
-            this.definitions = definitions ?? throw new ArgumentException(nameof(definitions), $"{nameof(definitions)} is null.");
-            this.text = text ?? throw new ArgumentNullException(nameof(text), $"{nameof(text)} is null.");
+            if (definitions == null || definitions.Length == 0)
+                throw new ArgumentException($"{nameof(definitions)} is null or empty.", nameof(definitions));
+            if (text == null)
+                throw new ArgumentNullException(nameof(text), $"{nameof(text)} is null.");
+
+            this.definitions = definitions;
+            this.text = text;
             index = 0;
         }
 
